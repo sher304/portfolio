@@ -1,0 +1,98 @@
+a, button {
+    scroll-behavior: smooth;
+}
+
+
+.main{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.main p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    animation: mymove 5s infinite;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+nav {
+    position: relative;
+}
+.inform{
+    text-align: center;
+    margin-top: 25%;
+
+}
+
+.inform p {
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.left_side {
+    margin-top: 7%;
+    width: 600px;
+}
+
+
+
+.left_side p {
+    margin-left: 30%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.right_side p {
+    margin-top: 10%;
+    margin-left: 30%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.projects{
+    text-align: center;
+    margin-top: 20%;
+
+}
+
+.projects p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+nav {
+    position: fixed;
+}
+
+.more{
+    text-align: center;
+    margin-top: 25%;
+
+}
+
+.more p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
